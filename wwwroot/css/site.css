@@ -1,0 +1,462 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+  margin:0;
+  left:0;
+  background-image: url(/images/laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding:50px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 14;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+@media only screen and (min-width:500px) {
+    .container-test {
+        display: flex;
+    }
+    .container-test1 {
+        display:flex;
+
+    }
+    
+}
+.nav label {
+    margin: 0 0 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+.container-test {
+    background-color: #E85B75;
+    height: 70px;
+    padding-left: 15px;
+    /*padding-right: 15px;*/
+    font-size: 16px;
+    line-height: 70px;
+    position: fixed;
+    width: 60%;
+   
+}
+    .container-test a {
+        color: white;
+        text-decoration: none;
+        font-family: 'KoHo', sans-serif;
+    }
+
+
+#toggle {
+    display: none;
+}
+/* Hide/rearrange for smaller screens */
+@media only screen and (max-width: 500px) {
+    /* Hide captions */
+
+    .nav label {
+        display: block;
+        cursor: pointer;
+        background-color: #524C57;
+        padding-left: 15px;
+        position: fixed;
+    }
+    .container-test {
+        text-align:center;
+  
+        height:150px;
+        line-height:20px;
+        display:none;
+        background-color:#524C57;
+        position: fixed;
+        top: 0;
+        
+        
+    }
+        .container-test a {
+            display: block;
+            border-bottom: 1px solid rgb(31,52,40);
+            margin: 0;
+            padding: 0;
+            position: fixed;
+        }
+    #toggle:checked + .container-test {
+        display:block;
+        
+    }
+    
+    
+    
+}
+
+
+.box {
+    flex:10;
+
+    
+    
+}
+.box1 {
+    flex:1;
+    margin-right:10px;
+}
+.box2 {
+    flex: 1;
+    margin-right: 10px;
+}
+.box3 {
+    flex: 1;
+    margin-right: 10px;
+}
+/*.box4{
+    flex: 1;
+    margin-right: 10px;
+    background-color: #E85B75;
+}*/
+
+.b1,.b2 {
+    flex: 2;
+    margin-right: 10px;
+    font-size:12px;
+    color:blue;
+    background-color: #E85B75;
+    
+}
+
+.container-test1 {
+    
+    text-align: center;
+    color: white;
+    background-color: #E85B75;
+    opacity: 1;
+    
+}
+    .container-test1 h2 {
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
+        background-color: #E85B75;
+        opacity: 0.8;
+        font-weight: bold;
+        
+    }
+    .container-test1 p, li {
+        font-family: 'Titillium Web', sans-serif;
+        padding: 40px;
+        text-align:left;
+        opacity: 1;
+        /*dispaly:inline*/
+        
+    }
+.bo1 {
+    flex: 1;
+    background-color: #E85B75;
+    /*border-style: solid;
+    /*border: #f9f9f9;*/
+    /*border-width: 10px, solid-white;*/
+    height:75px;
+    /*margin:10px;*/
+    
+
+}
+.bo2 {
+    flex: 1;
+    background-color: #FF6F7F;
+    height:370px;
+    margin:10px;
+}
+.bo3 {
+    flex: 1;
+    background-color: #E85B75;
+    height: 390px;
+    margin: 10px;
+}
+
+.blockquote {
+    background: #333;
+    border-left: 10px solid  #E85B75;
+    margin: 1.5em 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0.5em 10px;
+    quotes: none;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+    .blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.55em;
+        vertical-align: -0.4em;
+    }
+    .blockquote p {
+        display: inline;
+    }
+    .blockquote h5 {
+        color:#FF6F7F;
+    }
+.blockquote1 {
+    background: #333;
+    border-left: 10px solid #E85B75;
+    margin: 1.5em 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0.5em 10px;
+    quotes: none;
+    padding-left: 30px;
+    padding-bottom:30px;
+}
+
+    .blockquote1:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.55em;
+        vertical-align: -0.4em;
+    }
+
+    .blockquote1 p {
+        display: inline;
+    }
+    .blockquote1 h5 {
+        color: #E85B75;
+    }
+.blockquote2 {
+    background: #333;
+    border-left: 10px solid #E85B75;
+    margin: 1.5em 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0.5em;
+    padding-left: 30px;
+    quotes: none;
+    padding-bottom: 30px;
+}
+
+    .blockquote2:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.55em;
+        vertical-align: -0.4em;
+    }
+
+    .blockquote2 p {
+        display: inline;
+    }
+    .blockquote2 h5 {
+        color: #E85B75;
+    }
+.h31 {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #E85B75;
+    text-align: center;
+    font-size: 40px;
+    border-left: solid rgb(68, 27, 35) 20px;
+    margin-top: 100px;
+    padding: 10px;
+}
+.bq {
+    margin:0 5% 0 5%;
+    
+}
+h6 {
+    text-align:center;
+}
+a:hover {
+    color:orange;
+}
+.form-group-layout {
+    
+    padding:5%;
+    
+    text-align: center;
+}
+
+    .form-group-layout input {
+        width: 200px;
+        height: 25px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 25px;
+    }
+    :focus{outline:none}
+.form-control1 ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 20px;
+    background-color: orange;
+    transition: 0.4s;
+}
+.form-control1:focus ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+    .form-group-layout label {
+        color: black;
+        width: 200px;
+        
+    }
+    .form-group button {
+        width:200px;
+        height:25px;
+        border:none;
+        color:white;
+        background-color:#1f343f;
+    }
+    .person1 {
+        text-align:center;
+        margin:5% 20% 5% 20%;
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+    }
+.hr1 {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    margin:0 20% 0 20%;
+   /* background-color: transparent;*/
+}
+
+    .hr1:after {
+        content: "=";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background: white;
+        opacity: 0.8;
+    }
+
+    .welcome{
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+    }
+    
+    .flex-product{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+       
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .flex-product > div{
+        display: inline;
+        flex-direction: column;
+        
+        height: auto;
+        
+        background-color: #333;
+        margin: 10px;
+        border: 5px;
+        border-color: #E85B75;
+        border-radius: 5px;
+        
+        
+        
+    }
+
+    .flex-product > input{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 5px;
+        background: none;
+       
+        
+
+    }
+    
+   
+    .product-image{
+        width: 200px;
+    }
+    .product-image{
+        align-content: space-between;
+    }
+
+    .product-title{
+        font-weight: bold;
+    }
+
+    .buttons{
+        text-align: center;
+        
+        
+    }
+
+    .amount{
+        
+        text-align: center;
+    }
+    .amount-field{
+        width: 100px;
+        background-color: rgb(240, 131, 151);
+        border-color: #FF6F7F;
+        border-radius: 5px;
+        
+    }
+
+    .button-style{
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #E85B75;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px rgba(232, 91, 117, 0.438);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .button-style:active{
+        background-color: rgba(221, 79, 105, 0.904);
+        box-shadow: 0 5px rgba(232, 91, 117, 0.438);
+        transform: translateY(4px);
+    }
+
+    
+    .flex-product > p{
+        display: inline;
+    }
+    .bb1{
+        display: inline;
+    }

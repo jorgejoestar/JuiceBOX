@@ -1,0 +1,50 @@
+﻿@model Webshop.Models.ProductViewModel
+@{
+    ViewData["Title"] = "Products";
+
+
+   
+
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<hr />
+
+<div>
+
+    @{
+
+
+        foreach (var data in Model.Products)
+        {
+
+       
+            <div class="flex-product">
+                <div class="bb1">
+                    <h3><label asp-for="Name">@data.Name</label></h3>
+                    <img src="~/images/reichtum.png"/><br /> <!--@data.Imagepath-->
+                    <hr />
+                    <p>@data.Description</p><br />
+
+                    <p><label><b>Price:</b></label><i> @data.Price</i></p><br />
+                    <p><label><b>Stock:</b></label><i> @data.Stock</i></p><br />
+                    <div class="amount">
+                   <input class="amount-field" type="number" min="1" max="@data.Stock" placeholder="Enter Amount" /><br />
+                   </div>
+                    <div class="buttons">
+                    <button class="button-style" >Buy</button>
+                    </div>
+                </div>
+
+            </div>
+        }
+    }
+    
+</div>
+    <address>
+        <strong>Support:</strong> <a href="mailto:Support@juicebox.com">Support@juicebox.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@juicebox.com">Marketing@juicebox.com</a>
+    </address>
+
